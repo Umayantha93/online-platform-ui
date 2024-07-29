@@ -30,7 +30,12 @@ const Navbar = () => {
       <header className="navbar navbar-expand-md navbar-dark d-print-none">
         <div className="container-xl">
           <h1 className="navbar-brand navbar-brand-autodark d-none-navbar-horizontal pe-0 pe-md-3">
-          <a className="navbar-brand col-md-3 col-lg-2 me-0 px-3" href="#">Company name</a>
+          <a 
+              className="navbar-brand col-md-3 col-lg-2 me-0 px-3" 
+              href={user.role_id === 2 ? "/admin/dashboard" : "/home"}
+            >
+              Online Platform
+            </a>
           </h1>
           <div className="navbar-nav flex-row order-md-last">
             <div className="d-none d-md-flex">
