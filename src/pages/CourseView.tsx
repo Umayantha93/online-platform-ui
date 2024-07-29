@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import axios from 'axios';
-import UserWrapper from '../components/User/UserWrapper';
+import UserWrapper from '../components/user/UserWrapper';
 
 const CourseView = () => {
   const { id } = useParams();

@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link, NavLink } from 'react-router-dom';
-import "../../dist/css/demo.min.css"
-import "../../dist/css/tabler.min.css"
-import "../../dist/css/tabler-vendors.min.css"
-import "../../dist/js/demo-theme.min.js"
 import { User } from '../models/user';
 import axios from 'axios';
 
@@ -52,7 +48,7 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbar-menu">
             <div className="d-flex flex-column flex-md-row flex-fill align-items-stretch align-items-md-center">
               <ul className="navbar-nav">
-                {user.role_id === 1 && (
+                {user.role_id === 2 && (
                     <>
                       <li className="nav-item">
                         <NavLink 

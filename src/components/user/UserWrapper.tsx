@@ -12,7 +12,7 @@ const UserWrapper = (props: any) => {
       async () => {
         try {
           const { data } = await axios.get('user');
-          if (data.role.id !== 2) { 
+          if (data.role.id !== 1) { 
             setNavigate(true);
           }
         } catch (e) {

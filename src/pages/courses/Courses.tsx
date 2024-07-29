@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import Wrapper from '../../components/admin/Wrapper';
 import axios from 'axios';
+import "../../dist/css/course.table.css";
 import { Link } from 'react-router-dom';
 import { Course } from '../../models/course';
 
@@ -62,7 +63,7 @@ const Courses = () => {
                   <tr key={course.id}>
                     <td className="text-muted">{index}</td>
                     <td className="text-muted">{course.title}</td>
-                    <td className="text-muted">{course.description}</td>
+                    <td className="text-muted description" style={{width: '255px', height: '30px'}}>{course.description}</td>
                     <td>
                       <img src={course.image} alt={course.title} style={{ width: '65px', height: '50px' }} />
                     </td>

@@ -62,7 +62,7 @@ const Users = () => {
                     <td className="text-muted">{user.first_name} {user.last_name}</td>
                     <td className="text-muted">{user.email}</td>
                     <td>
-                      <Link to={`/admin/students/${user.id}/edit`} className="btn btn-dark btn-square w-25">Edit</Link>
+                      <Link to={`/admin/students/${user.id}/edit`} className="btn btn-dark btn-square w-15">Edit</Link>
                       <button className="btn btn-danger btn-square w-30 ms-2"onClick={() => del(user.id)}>
                       Delete</button>
                     </td>

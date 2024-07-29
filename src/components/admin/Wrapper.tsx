@@ -11,7 +11,7 @@ const Wrapper = (props: any) => {
       async () => {
         try {
           const { data } = await axios.get('user');
-          if (data.role.id !== 1) { 
+          if (data.role.id !== 2) { 
             setNavigate(true);
           }
         } catch (e) {
